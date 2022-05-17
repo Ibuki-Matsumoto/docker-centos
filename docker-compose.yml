@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  centos:
+    build: ./Infra
+    tty: true
+    volumes:
+      - ./data:/usr/local/src
+    privileged: true
+    command: /sbin/init
+
